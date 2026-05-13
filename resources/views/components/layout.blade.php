@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ isset($title) ? $title : 'e-commerce Platform' }}</title>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+</head>
+
+<body>
+    <nav class="bg-primary text-white p-4 capitalize font-bold">
+        <div class="container mx-auto flex flex-row justify-between align-middle">
+            <div>
+                <h1 class="text-2xl font-bold">e-commerce Platform</h1>
+            </div>
+            <div class="flex flex-row gap-4">
+                <a href="/">Home</a>
+                <a href="/products">Products</a>
+                <a href="/cart">Cart</a>
+                <a href="/orders">Orders</a>
+            </div>
+        </div>
+    </nav>
+    <main class="container mx-auto p-4">
+        {{ $slot }}
+    </main>
+</body>
+
+</html>
