@@ -14,12 +14,7 @@
             <div>
                 <h1 class="text-2xl font-bold">e-commerce Platform</h1>
             </div>
-            <div class="flex flex-row gap-4">
-                <a href="/">Home</a>
-                <a href="/products">Products</a>
-                <a href="/cart">Cart</a>
-                <a href="/orders">Orders</a>
-            </div>
+            <x-nav />
         </div>
     </nav>
     <main class="container mx-auto p-4">
