@@ -20,6 +20,7 @@
     <main class="container mx-auto p-4">
         {{ $slot }}
     </main>
+    <x-footer />
 </body>
 
 </html>
