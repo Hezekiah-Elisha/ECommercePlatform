@@ -7,3 +7,5 @@ Route::get('/', function () {
 });
 
 Route::view('/login', 'auth.login')->name('login');
+
+Route::view("/products/{id}", "product.product")->name("product.show");
